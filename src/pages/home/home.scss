@@ -1,0 +1,28 @@
+page-home {
+    .home_page {
+        position: relative;
+
+        figure {
+            margin: 50px auto 50px auto;
+            text-align: center;
+        }
+
+        .content_btm {
+            text-align: center;
+            
+
+            h4 {
+                color: #fff;
+                font-size: 5vw;
+                font-weight: normal;
+                line-height: 7vw;
+            }
+            .content_btm_btn{
+                margin: 50px 0 20px 0;
+            }
+            .button-clear{
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+page-register {
+    .header {
+        .toolbar-background {
+    border-color: transparent;
+    background: transparent;
+        }
+        .back-button{
+            color: #fff;
+        }
+        &:after{
+            background: none;
+        }
+    }
+    .fixed-content,.scroll-content{
+        margin-top: 0!important;
+    }
+    h4 {
+        color: #fff;
+        font-size: 3.22vw;
+        font-weight: normal;
+        line-height: 5vw;
+        text-align: center;
+        padding: 20px 0 0 0;
+    }
+    .btn_margin{
+        margin: 10px 0 0 0 ;
+    }
+    .list{
+        padding:0; margin: 0;
+        .item{
+            background-color: transparent;    color: #fff; margin: 0 0 15px 0;
+           .item-inner{
+            box-shadow: none!important;
+           } 
+            ion-label{
+                color:#fff;
+            }
+            .co_code{
+                position: absolute;
+    left: 16px;
+    width: 40px;
+    bottom: 0;
+            }
+            ion-select{
+                padding-left: 40px;
+            }
+        }
+    }
+}

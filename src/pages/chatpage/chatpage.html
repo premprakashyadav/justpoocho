@@ -1,0 +1,157 @@
+<ion-header>
+<ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="puppies">
+        <ion-icon name="ios-menu"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="kittens">
+        <ion-icon name="md-chatboxes"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="ducklings">
+        <ion-icon name="ios-filing"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-color">
+  <div [ngSwitch]="pet">
+   
+    <ion-list *ngSwitchCase="'puppies'" class="side_menu">
+        <figure>
+            <img src="assets/imgs/logo.png"/>
+          </figure>
+          <h4>Prem</h4>
+        <ion-item>
+            <i class="fas fa-envelope" item-start></i>
+            email@email.com
+        </ion-item>
+        <ion-item>
+            <i class="fas fa-phone" item-start></i>
+            919987557259
+        </ion-item>
+        <ion-item>
+            <i class="fas fa-user-circle" item-start></i>
+            My Profile
+        </ion-item>
+        <ion-item>
+            <i class="fas fa-concierge-bell" item-start></i>
+            List of Services
+        </ion-item>
+        <ion-item>
+          <i class="fas fa-hands-helping" item-start></i>
+            About Us
+        </ion-item>
+        <ion-item>
+            <i class="fas fa-file-contract" item-start></i>
+            T&C
+        </ion-item>
+        <ion-item>
+            <i class="fas fa-user-secret" item-start></i>
+            Privacy Policy
+        </ion-item>
+        <ion-item>
+          <i class="fas fa-lock" item-start></i>
+            Log Out
+        </ion-item>
+      
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'kittens'">
+      <div  class="message-wrap">
+        <ion-list  class="message left">
+            <ion-item>
+              <ion-avatar item-start>
+                <img src="assets/imgs/admin.png" style="border-radius:0%">
+              </ion-avatar>
+              <div class="msg-detail">
+                    <div class="msg-info">
+                    </div>
+                    <div class="msg-content">
+                        <span class="triangle"></span>
+                        <p class="line-breaker">test</p>
+                        <p class="dateTime">date time</p>
+                    </div>
+                </div>
+              
+              
+             
+            </ion-item>
+          </ion-list>
+    
+          <ion-list  class="message right">
+            <ion-item>
+              <ion-avatar item-end>
+                <img src="assets/imgs/logo.png" >
+              </ion-avatar>
+              <div class="msg-detail">
+                    <div class="msg-info">
+                    </div>
+                    <div class="msg-content">
+                        <span class="triangle"></span>
+                        <p class="line-breaker ">test1</p>
+                          <img src="assets/imgs/logo.png" width="100" (click)="viewImg(msg.image)"> 
+                        <p class="dateTime">date time</p>
+                    </div>
+                </div>
+            </ion-item>
+          </ion-list>
+     </div>
+     <ion-footer no-border>
+      <ion-grid class="input-wrap">
+          <ion-row>
+              <ion-col col-10>
+                  <ion-textarea #chat_input
+                                placeholder="Text Input">
+                  </ion-textarea>
+              </ion-col>
+              <ion-col col-2>
+                  <button ion-button clear icon-only item-right (click)="sendMsg()">
+                      <ion-icon name="ios-send" ios="ios-send" md="md-send"></ion-icon>
+                  </button>
+              </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col col-12>
+                  <i class="fas fa-camera"></i>
+                  <i class="fas fa-images"></i>
+                  <i class="fas fa-microphone"></i>
+                  <i class="fas fa-phone"></i>
+             
+              </ion-col>
+              
+          </ion-row>
+      </ion-grid>
+    
+  </ion-footer>
+    </ion-list>
+   
+
+    <ion-list *ngSwitchCase="'ducklings'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-1.jpg">
+        </ion-thumbnail>
+        <h2>Daffy</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-2.jpg">
+        </ion-thumbnail>
+        <h2>Huey</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-3.jpg">
+        </ion-thumbnail>
+        <h2>Dewey</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>Louie</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

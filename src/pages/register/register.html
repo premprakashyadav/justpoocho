@@ -1,0 +1,48 @@
+<ion-header>
+
+  <ion-navbar>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="bg-color">
+  <h4>Hi There,<br/>Welcome to Justpoocho!<br/>To help us serve you better<br/>Please enter the following details.</h4>
+  <ion-list>
+
+    <ion-item class="country_parent">
+      <ion-label stacked>Select Country</ion-label>
+      <ion-input type="text" readonly [(ngModel)]="code" class="co_code"></ion-input>
+      <ion-select [(ngModel)]="name" placeholder="Country">
+        <ion-option value="{{con.name}}" *ngFor="let con of country" (ionSelect)="changeCountry(con)">{{con.name}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Phone</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Create Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Create Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+
+  </ion-list>
+  
+
+  <button ion-button block outline color="light" class="btn_margin" (click)="otpverfy()">Register</button>
+</ion-content>

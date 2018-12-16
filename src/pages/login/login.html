@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="bg-color">
+  <h4>Please enter the following details<br/>and login to your account.</h4>
+  <ion-list>
+
+
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-grid class="forget_sec">
+        <ion-row>
+          <ion-col col-12 text-right> <span color="light" (click)="forgotpwd()">Forgot Password?</span></ion-col>
+        </ion-row>
+      </ion-grid>
+
+    <button ion-button block outline color="light" class="btn_margin" (click)="login()">Login</button>
+
+
+  </ion-list>
+</ion-content>

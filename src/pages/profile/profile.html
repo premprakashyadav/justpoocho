@@ -1,0 +1,65 @@
+<ion-header>
+
+   
+  <ion-navbar>
+      <ion-title>Profile</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  <ion-content padding class="bg-color">
+    
+    <ion-list>
+  
+        <ion-item>
+            <ion-label stacked>Name</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label stacked>Email</ion-label>
+              <ion-input type="email"></ion-input>
+            </ion-item>
+      <ion-item>
+        <ion-label stacked>Phone</ion-label>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label stacked>Update Profile Picture</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+    
+  
+      <ion-item>
+        <ion-label stacked>Birthday</ion-label>
+        <ion-datetime displayFormat="DD MMM YYYY" [(ngModel)]="event.month"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Profession</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Gender</ion-label>
+        <ion-select [(ngModel)]="gender" [selectOptions]="gender">
+            <ion-option value="male">Male</ion-option>
+            <ion-option value="female">Female</ion-option>
+          </ion-select>
+      </ion-item>
+      <ion-item>
+          <ion-label>Married</ion-label>
+          <ion-radio checked="true" name="maritalstatus" value="married"></ion-radio>
+        </ion-item>
+        <ion-item>
+            <ion-label>Unmarried</ion-label>
+            <ion-radio value="unmarried" name="maritalstatus"></ion-radio>
+          </ion-item>
+          <ion-item>
+              <ion-label stacked>Address</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+  
+  
+    </ion-list>
+    
+  
+    <button ion-button block outline color="light" class="btn_margin" (click)="otpverfy()">Register</button>
+  </ion-content>
