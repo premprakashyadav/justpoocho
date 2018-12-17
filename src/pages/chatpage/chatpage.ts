@@ -21,5 +21,27 @@ pet: string = "puppies"
   ionViewDidLoad() {
     console.log('ionViewDidLoad ChatpagePage');
   }
+  aboutus(){
+    this.navCtrl.push('AboutusPage');
+  }
+  tc(){
+    this.navCtrl.push('TermscondPage');
+  }
+  privacy(){
+    this.navCtrl.push('PrivacypolicyPage');
+  }
+  logout(){
+    
+  }
+  profile(){
+    this.navCtrl.push('ProfilePage');
+  }
+
+  services(){
+    this.navCtrl.push('ServicesPage');
+  }
+  contact(){
+    this.navCtrl.push('ContactusPage');
+  }
 
 }

@@ -30,27 +30,32 @@
             <i class="fas fa-phone" item-start></i>
             919987557259
         </ion-item>
-        <ion-item>
+        <ion-item (click)="profile()">
             <i class="fas fa-user-circle" item-start></i>
             My Profile
         </ion-item>
-        <ion-item>
+        <ion-item (click)="services()">
             <i class="fas fa-concierge-bell" item-start></i>
             List of Services
         </ion-item>
-        <ion-item>
+        <ion-item (click)="aboutus()">
           <i class="fas fa-hands-helping" item-start></i>
             About Us
         </ion-item>
-        <ion-item>
+        <ion-item (click)="tc()">
             <i class="fas fa-file-contract" item-start></i>
             T&C
         </ion-item>
-        <ion-item>
+        <ion-item (click)="privacy()">
             <i class="fas fa-user-secret" item-start></i>
             Privacy Policy
         </ion-item>
-        <ion-item>
+        <ion-item (click)="contact()">
+          <i class="fas fa-user-secret" item-start></i>
+          Contact Us
+      </ion-item>
+        
+        <ion-item (click)="logout()">
           <i class="fas fa-lock" item-start></i>
             Log Out
         </ion-item>
